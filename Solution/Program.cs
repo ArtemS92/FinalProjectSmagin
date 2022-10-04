@@ -12,7 +12,7 @@ string[] array = new string[size];
 Console.WriteLine("Введите элементы массива: " );// Ввод элементов через Enter
 for (int i = 0; i < size; i++)
     array[i] = Console.ReadLine(); 
-Console.Write($"[{String.Join(" , ",array)}]"); 
+Console.Write($"[{String.Join(" , ",array)}]"); //Вывод заданного масива
 
 Console.WriteLine();
 
@@ -29,9 +29,9 @@ string[] GetFinalArray(string[] array){
             count++;
         }
     }
-    Array.Resize(ref finalArray, count);
+    Array.Resize(ref finalArray, count);// Изменение размерности финального массива
     return finalArray;
-
 }
-Console.Write($"[{String.Join(" , ",GetFinalArray(array))}]");
+
+Console.Write($"[{String.Join(" , ",GetFinalArray(array))}]");//Вывод финального массива
 Console.WriteLine();
